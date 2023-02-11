@@ -1,4 +1,4 @@
-package br.edu.ifgoiano.aluno.henrique.aula1;
+package br.edu.ifgoiano.aluno.henrique.aula2;
 
 public class Aluno {
 	String nome;
