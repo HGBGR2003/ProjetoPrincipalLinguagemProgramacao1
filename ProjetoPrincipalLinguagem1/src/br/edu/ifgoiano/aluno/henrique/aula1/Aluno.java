@@ -6,7 +6,7 @@ public class Aluno {
 	int idade;
 	
 
-	public static int GerarIdade(int mini,int max) {
+	public static int gerarIdade(int mini,int max) {
 		int idadeAleatoria = (int) (Math.random() * (max - mini)) + mini;
 		return idadeAleatoria;
 	}

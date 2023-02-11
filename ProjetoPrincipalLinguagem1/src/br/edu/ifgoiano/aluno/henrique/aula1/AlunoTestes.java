@@ -1,6 +1,6 @@
 package br.edu.ifgoiano.aluno.henrique.aula1;
 
-public class Testes {
+public class AlunoTestes {
 
 	public static void main(String[] args) {
 		Cachorro cacho1 = new Cachorro();
