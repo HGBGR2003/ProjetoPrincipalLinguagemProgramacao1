@@ -17,9 +17,7 @@ public class Mensagem {
 	}
 	
 	public void mostreMensagemJuntada() {
-		String textoDoMetodoCopiandoAtributos = null;
-	    textoDoMetodoCopiandoAtributos = copiandoAtributosDaClasse(data, autor, texto);
-		 System.out.println("Olá "  + autor + " sua mensagem com o texto é \"" + texto + "\" " +
+		System.out.println("Olá "  + autor + " sua mensagem com o texto é \"" + texto + "\" " +
 	                "foi enviada na data: "
 	                + data);
 	}
