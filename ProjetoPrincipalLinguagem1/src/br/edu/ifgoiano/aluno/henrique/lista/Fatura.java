@@ -6,6 +6,13 @@ public class Fatura {
 	private int quantiCompradaItem;
 	private double precoItem;
 	
+	public Fatura (String numero1, String descricao1,int quantidadeComprada, double imtemPreco) {
+		this.numero = numero1;
+		this.descricao = descricao1;
+		this.quantiCompradaItem = quantidadeComprada;
+		this.precoItem = imtemPreco;
+	}
+	
 	public String getNumero() {
 		return numero;
 	}
