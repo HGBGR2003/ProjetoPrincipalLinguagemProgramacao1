@@ -16,22 +16,22 @@ public boolean[] getVetorPrincipal() {
 }
 
 public InteiroSet uniaoDosValores(InteiroSet outroVetor) {
-	InteiroSet valorNovo = new InteiroSet();
+	InteiroSet UniaoNovo = new InteiroSet();
 	
 	for(int i = 0; i < 100; i++) {
-		valorNovo.getVetorPrincipal()[i] = this.vetorPrincipal[i] || outroVetor.getVetorPrincipal()[i];
+		UniaoNovo.vetorPrincipal[i] = this.vetorPrincipal[i] || outroVetor.vetorPrincipal[i];
 	}
 	
-	return valorNovo;
+	return UniaoNovo;
 }
 
 public InteiroSet IntercecaoDoVetor(InteiroSet outroVetor) {
-	InteiroSet valorNovo = new InteiroSet();
+	InteiroSet intersecNovo = new InteiroSet();
 	for(int i = 0; i < 100; i++) {
-		valorNovo.getVetorPrincipal()[i] = this.vetorPrincipal[i] && outroVetor.getVetorPrincipal()[i];
+		intersecNovo.getVetorPrincipal()[i] = this.vetorPrincipal[i] && outroVetor.vetorPrincipal[i];
 	}
 	
-	return valorNovo;
+	return intersecNovo;
 }
 
 public void InsereElemento(int k) {
@@ -53,23 +53,22 @@ public String converteEmStrings() {
 	
 	for(int i = 0; i < 100; i++) {
 		if (vetorPrincipal[i]) {
-			convertidoAString.append(i).append("");
+			if (!conjuntoSemNada) {
+				convertidoAString.append("");
+			}
+			convertidoAString.append(i);
 			conjuntoSemNada = false;
 		}
 	}
 	
-	//Separando com espaços
-	if (conjuntoSemNada) {
-		return "-";
-	}else {
-		return convertidoAString.toString().trim();
-	}		
+	return conjuntoSemNada ? "-" : convertidoAString.toString();
+	
 }
 
 public boolean eIgualA(InteiroSet outroVetor) {
 	for(int i = 0; i < 100; i++) {
 		if (this.vetorPrincipal[i] != outroVetor.getVetorPrincipal()[i]){
-			
+			return false;
 		}
 	}
 	
