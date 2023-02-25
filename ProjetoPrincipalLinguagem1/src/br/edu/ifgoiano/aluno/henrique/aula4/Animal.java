@@ -60,11 +60,5 @@ public class Animal {
 		return "Animal [nome=" + nome + ", comprimento=" + comprimento + ", numeroPatas=" + numeroPatas + ", cor=" + cor
 				+ ", ambiente=" + ambiente + ", velociMedia=" + velociMedia + "]";
 	}
-
-
-	/*public void verDados() {
-		
-	}*/
-	
 	
 }
