@@ -5,7 +5,7 @@ import java.util.Random;
 public class Lampada {
 
 	private boolean estadoDaLampadaOnouOff;
-	
+	private int numeroDeWatts;
 	
 	public Lampada(boolean estadoInicial) {
 		if (estadoInicial == true) {
@@ -15,10 +15,24 @@ public class Lampada {
 		}
 	}
 	
+	public Lampada(int numeroWatts) {
+		this.numeroDeWatts = numeroWatts;
+	}
+	
 	public Lampada() {
 		Random aleatorio = new Random();
 		estadoDaLampadaOnouOff = aleatorio.nextBoolean();
+		this.numeroDeWatts = aleatorio.nextInt(141) + 60;
 	}
+	
+	public int getNumeroDeWatts() {
+		return numeroDeWatts;
+	}
+	
+	public void setNumeroDeWatts(int numeroDeWatts) {
+		this.numeroDeWatts = numeroDeWatts;
+	}
+
 
 	public boolean isEstadoDaLampadaOnouOff() {
 		return estadoDaLampadaOnouOff;
