@@ -1,4 +1,4 @@
-package br.edu.ifgoiano.aluno.henrique.aula4;
+package br.edu.ifgoiano.aluno.henrique.aula5;
 
 public class TestesPonto2D {
 

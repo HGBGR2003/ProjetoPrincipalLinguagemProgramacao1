@@ -1,4 +1,4 @@
-package br.edu.ifgoiano.aluno.henrique.aula4;
+package br.edu.ifgoiano.aluno.henrique.aula5;
 
 public class Ponto2D {
 	private double x;

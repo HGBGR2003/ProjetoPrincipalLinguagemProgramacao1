@@ -1,4 +1,4 @@
-package br.edu.ifgoiano.aluno.henrique.aula5;
+package br.edu.ifgoiano.aluno.henrique.aula6;
 
 public class Quest3 {
 
