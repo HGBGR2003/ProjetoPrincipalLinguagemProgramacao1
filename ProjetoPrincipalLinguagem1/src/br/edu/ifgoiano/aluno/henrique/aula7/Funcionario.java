@@ -1,9 +1,9 @@
 package br.edu.ifgoiano.aluno.henrique.aula7;
 
 public class Funcionario {
-	private String nome;
-	private String matricula;
-	private double salarioBase;
+	 String nome;
+	 String matricula;
+	 double salarioBase;
 	
 	public Funcionario(String nome, String matricula, double salarioBase) {
 		this.nome = nome;
