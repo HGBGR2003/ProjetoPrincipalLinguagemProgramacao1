@@ -1,17 +1,23 @@
 package br.edu.ifgoiano.aluno.henrique.aula7.Ingressos;
 
 public class Vip extends Ingresso {
-	@Override
-	public float imprimirValor(float valor1) {
-		// TODO Auto-generated method stub
-		return super.imprimirValor(valor1);
+	private double adicional;
+	
+	public Vip(double valor,double adicional) {
+		super(valor);
+		this.adicional = adicional;
 	}
 	
-	public float imprimindoAumentado(float vip) {
-		float soma;
-		soma = this.valor + vip;
-		return soma;
-		
+	public double valorVip() {
+		return this.valor + this.adicional;
+	}
+	
+	public double getAdicional() {
+		return adicional;
+	}
+
+	public void setAdicional(double adicional) {
+		this.adicional = adicional;
 	}
 
 }

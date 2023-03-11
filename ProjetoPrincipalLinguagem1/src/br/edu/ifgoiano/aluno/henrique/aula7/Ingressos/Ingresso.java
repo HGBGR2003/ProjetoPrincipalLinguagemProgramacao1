@@ -1,19 +1,22 @@
 package br.edu.ifgoiano.aluno.henrique.aula7.Ingressos;
 
 public class Ingresso {
-	 float valor;
+	protected double valor;
+	
+	public Ingresso(double valor) {
+		this.valor = valor;
+	}
 
-	public float getValor() {
+	public double getValor() {
 		return valor;
 	}
 
-	public void setValor(float valor) {
+	public void setValor(double valor) {
 		this.valor = valor;
 	}
 	 
-	public float imprimirValor(float valor1) {
-		this.valor = valor1;
-		return imprimirValor(valor1);
+	public void imprimirValor() {
+		System.out.println("Valor do Ingresso: R$ %.2f%n" + this.valor);
 		
 	}
 

@@ -1,8 +1,14 @@
 package br.edu.ifgoiano.aluno.henrique.aula7.Ingressos;
 
 public class Normal extends Ingresso {
-	
-	public void imprimirNormal() {
-		System.out.println("Ingresso Normal : 7.50");
+
+	public Normal(double valor) {
+		super(valor);
 	}
+	
+	public void imprimirNormalIngresso() {
+		System.out.println("Ingresso Normal");
+	}
+	
+	
 }
