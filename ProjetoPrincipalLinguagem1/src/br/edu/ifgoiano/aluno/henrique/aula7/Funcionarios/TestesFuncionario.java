@@ -1,4 +1,4 @@
-package br.edu.ifgoiano.aluno.henrique.aula7;
+package br.edu.ifgoiano.aluno.henrique.aula7.Funcionarios;
 
 public class TestesFuncionario {
 

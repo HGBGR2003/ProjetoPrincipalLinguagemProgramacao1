@@ -1,4 +1,4 @@
-package br.edu.ifgoiano.aluno.henrique.aula7.ingresso.testes;
+package br.edu.ifgoiano.aluno.henrique.aula7.Ingressos;
 
 public class Vip extends Ingresso {
 	@Override
