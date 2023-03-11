@@ -1,7 +1,7 @@
 package br.edu.ifgoiano.aluno.henrique.aula7.Ingressos;
 
 public class Vip extends Ingresso {
-	private double adicional;
+	double adicional;
 	
 	public Vip(double valor,double adicional) {
 		super(valor);

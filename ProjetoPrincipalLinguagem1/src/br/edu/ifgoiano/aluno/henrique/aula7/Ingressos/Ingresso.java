@@ -1,7 +1,7 @@
 package br.edu.ifgoiano.aluno.henrique.aula7.Ingressos;
 
 public class Ingresso {
-	protected double valor;
+	double valor;
 	
 	public Ingresso(double valor) {
 		this.valor = valor;
@@ -16,7 +16,7 @@ public class Ingresso {
 	}
 	 
 	public void imprimirValor() {
-		System.out.println("Valor do Ingresso: R$ %.2f%n" + this.valor);
+		System.out.println("Valor do Ingresso: R$ " + this.valor);
 		
 	}
 

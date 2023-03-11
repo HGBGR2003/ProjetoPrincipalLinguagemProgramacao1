@@ -1,7 +1,12 @@
 package br.edu.ifgoiano.aluno.henrique.aula7.Ingressos;
 
-public class CamaroteSuperior extends Vip {
+public class CamaroteSuperior extends Vip {	
 	double valorAdicional;
+
+	public CamaroteSuperior(double valor, double adicional, double valorAdicional) {
+		super(valor, adicional);
+		this.valorAdicional = valorAdicional;
+	}
 
 	public double getValorAdicional() {
 		return valorAdicional;
@@ -11,9 +16,8 @@ public class CamaroteSuperior extends Vip {
 		this.valorAdicional = valorAdicional;
 	}
 	
-	public double ValorDoSuperior(double adicional) {
-		this.valorAdicional = adicional;
-		return ValorDoSuperior(adicional);
+	public double valorDoCamaroteSuperior() {
+		return this.valor + this.adicional + this.valorAdicional;
 	}
 	
 }
