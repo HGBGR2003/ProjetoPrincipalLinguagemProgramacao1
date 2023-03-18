@@ -10,25 +10,10 @@ public class Funcionario {
 		this.matricula = matricula;
 		this.salarioBase = salarioBase;
 	}
-	
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public String getMatricula() {
-		return matricula;
-	}
-	public void setMatricula(String matricula) {
-		this.matricula = matricula;
-	}
+
 	public double getSalarioBase() {
 		return salarioBase;
 	}
-	public void setSalarioBase(double salarioBase) {
-		this.salarioBase = salarioBase;
-	}
-
+	
 	
 }
