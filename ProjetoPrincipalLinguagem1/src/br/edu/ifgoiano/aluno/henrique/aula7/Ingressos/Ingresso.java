@@ -3,8 +3,8 @@ package br.edu.ifgoiano.aluno.henrique.aula7.Ingressos;
 public class Ingresso {
 	double valor;
 	
-	public Ingresso(double valor) {
-		this.valor = valor;
+	public Ingresso() {
+		this.valor = 100;
 	}
 
 	public double getValor() {
