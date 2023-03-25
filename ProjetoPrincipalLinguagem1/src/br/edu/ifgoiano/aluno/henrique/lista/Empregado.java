@@ -2,14 +2,14 @@ package br.edu.ifgoiano.aluno.henrique.lista;
 
 public class Empregado extends Pessoa {
 	int codigoSetor;
-	float salarioBase;
-	float imposto;
+	double salarioBase;
+	double imposto;
 	
 	public Empregado() {
 		
 	}
 	
-	public Empregado(String nome, String endereco, String numero,int codigoSetor,float salarioBase,float imposto) {
+	public Empregado(String nome, String endereco, String numero,int codigoSetor,double salarioBase,double imposto) {
 		super(nome, endereco, numero);
 		this.codigoSetor = codigoSetor;
 		this.salarioBase = salarioBase;
@@ -22,21 +22,21 @@ public class Empregado extends Pessoa {
 	public void setCodigoSetor(int codigoSetor) {
 		this.codigoSetor = codigoSetor;
 	}
-	public float getSalarioBase() {
+	public double getSalarioBase() {
 		return salarioBase;
 	}
 	public void setSalarioBase(float salarioBase) {
 		this.salarioBase = salarioBase;
 	}
-	public float getImposto() {
+	public double getImposto() {
 		return imposto;
 	}
 	public void setImposto(float imposto) {
 		this.imposto = imposto;
 	}
 
-	public float calcularSalario() {
-		float diferenca;
+	public double calcularSalario() {
+		double diferenca;
 		diferenca = this.salarioBase - (this.imposto / 100);
 		return diferenca;
 	}

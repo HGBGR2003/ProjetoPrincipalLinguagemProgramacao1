@@ -1,8 +1,8 @@
 package br.edu.ifgoiano.aluno.henrique.lista;
 
 public class Fornecedor extends Pessoa {
-	float valorCredito;
-	float valorDivida;
+	double valorCredito;
+	double valorDivida;
 	
 	public Fornecedor() {
 		
@@ -14,23 +14,23 @@ public class Fornecedor extends Pessoa {
 		this.valorDivida = valorDivida;
 	}
 	
-	public float getValorCredito() {
+	public double getValorCredito() {
 		return valorCredito;
 	}
 	public void setValorCredito(float valorCredito) {
 		this.valorCredito = valorCredito;
 	}
-	public float getValorDivida() {
+	public double getValorDivida() {
 		return valorDivida;
 	}
 	public void setValorDivida(float valorDivida) {
 		this.valorDivida = valorDivida;
 	}
 	
-	public float obterSaldo() {
-		float diferenca;
-		diferenca = this.valorCredito - this.valorDivida;
-		return diferenca;
+	public double obterSaldo() {
+		double diferencaDeSaldo;
+		diferencaDeSaldo = this.valorCredito - this.valorDivida;
+		return diferencaDeSaldo;
 	}
 	
 }

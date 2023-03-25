@@ -1,19 +1,19 @@
 package br.edu.ifgoiano.aluno.henrique.lista;
 
 public class Administrador extends Empregado {
-	float ajudaDeCusto;
+	double ajudaDeCusto;
 	
 	public Administrador() {
 		
 	}
 	
-	public Administrador(String nome, String endereco, String numero, int codigoSetor, float salarioBase,
-			float imposto,float ajudaDeCusto) {
+	public Administrador(String nome, String endereco, String numero, int codigoSetor, double salarioBase,
+			double imposto,double ajudaDeCusto) {
 		super(nome, endereco, numero, codigoSetor, salarioBase, imposto);
 		this.ajudaDeCusto = ajudaDeCusto;
 	}
 
-	public float getAjudaDeCusto() {
+	public double getAjudaDeCusto() {
 		return ajudaDeCusto;
 	}
 
@@ -22,14 +22,7 @@ public class Administrador extends Empregado {
 	}
 
 	@Override
-	public float calcularSalario() {
+	public double calcularSalario() {
 		return super.calcularSalario() + this.ajudaDeCusto;
 	}
-
-	
-
-
-
-	
-	
 }
