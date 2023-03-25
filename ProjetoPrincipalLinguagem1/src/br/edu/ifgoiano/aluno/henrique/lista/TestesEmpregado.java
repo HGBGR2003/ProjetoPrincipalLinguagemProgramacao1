@@ -3,7 +3,7 @@ package br.edu.ifgoiano.aluno.henrique.lista;
 public class TestesEmpregado {
 
 	public static void main(String[] args) {
-		Empregado empregadoAntigo = new Empregado("Fabio", "Rua t", "95213-1",89, 4500,30);
+		Empregado empregadoAntigo = new Empregado("Fabio", "Rua t", "95213-1",89,5000,20);
 		System.out.println("Nome: " + empregadoAntigo.getNome());
 	    System.out.println("Endereço: " + empregadoAntigo.getEndereco());
 	    System.out.println("Telefone: " + empregadoAntigo.getNumero());
