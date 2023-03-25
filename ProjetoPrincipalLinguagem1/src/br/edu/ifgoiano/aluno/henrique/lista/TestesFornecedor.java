@@ -11,7 +11,7 @@ public class TestesFornecedor {
 
 		System.out.println("-----------------------------");
 		
-		Fornecedor forn2 = new Fornecedor("Maria", "Rua B, 456", "88888-8888",10000, 1000);
+		Fornecedor forn2 = new Fornecedor("Maria", "Rua B, 456", "14265226-2252",10000, 1000);
 		System.out.println("Nome: " + forn2.getNome());
 	    System.out.println("Endereço: " + forn2.getEndereco());
 	    System.out.println("Telefone: " + forn2.getNumero());
