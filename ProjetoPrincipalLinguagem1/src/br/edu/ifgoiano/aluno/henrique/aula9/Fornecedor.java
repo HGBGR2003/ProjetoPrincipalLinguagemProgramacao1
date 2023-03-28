@@ -1,4 +1,4 @@
-package br.edu.ifgoiano.aluno.henrique.lista;
+package br.edu.ifgoiano.aluno.henrique.aula9;
 
 public class Fornecedor extends Pessoa {
 	double valorCredito;

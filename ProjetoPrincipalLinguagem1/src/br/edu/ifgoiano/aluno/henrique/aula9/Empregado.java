@@ -1,4 +1,4 @@
-package br.edu.ifgoiano.aluno.henrique.lista;
+package br.edu.ifgoiano.aluno.henrique.aula9;
 
 public class Empregado extends Pessoa {
 	int codigoSetor;
@@ -37,7 +37,7 @@ public class Empregado extends Pessoa {
 
 	public double calcularSalario() {
 		double diferenca;
-		diferenca = this.salarioBase - (this.imposto / 100);
+		diferenca = this.salarioBase - (this.imposto * this.salarioBase / 100);
 		return diferenca;
 	}
 	
