@@ -1,13 +1,13 @@
 package br.edu.ifgoiano.aluno.henrique.aula10.Escola;
 
 public class Escola {
-	int id;
+	String id;
 	String nome;
 	String endereco;
 	String[] ids;
 	int numeroCursos;
 	
-	public Escola(int id, String nome, String endereco, String [] ids,int numeroMaximoCursos) {
+	public Escola(String id, String nome, String endereco, String [] ids,int numeroMaximoCursos) {
 		this.id = id;
 		this.nome = nome;
 		this.endereco = endereco;
@@ -23,10 +23,10 @@ public class Escola {
 		this.numeroCursos = numeroCursos;
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getNome() {
