@@ -49,6 +49,8 @@ public class Escola {
 		this.ids = ids;
 	}
 
-	
+	public void addCurso(Curso curso) {
+	   curso.add(curso);
+	}
 
 }

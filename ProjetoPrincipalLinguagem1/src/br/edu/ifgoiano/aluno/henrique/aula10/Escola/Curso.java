@@ -62,11 +62,16 @@ public class Curso extends Escola {
 		this.idEscola = idEscola;
 	}
 	
-	public void addMatricula(String id) {
+	public void addMatricula(String matriculaA) {
 		if(numeroMatriculas < matriculasIds.length) {
-			matriculasIds[numeroMatriculas] = id;
+			matriculasIds[numeroMatriculas] = matriculaA;
 			numeroMatriculas++;
 		}
+	}
+
+	public void add(Object curso) {
+		// TODO Auto-generated method stub
+		
 	}
 
 

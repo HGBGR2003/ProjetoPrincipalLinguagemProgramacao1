@@ -68,6 +68,16 @@ public class Aluno extends Curso {
 	        }
 	        return (double) somaNotas / numNotas;
 	    }
+
+	public Object getMatriculasIds() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getNumeroMaximoMatriculas() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	    
 	}
 
